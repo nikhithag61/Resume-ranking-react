@@ -1,0 +1,222 @@
+/* General Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f4f8;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Layout Utilities */
+.min-h-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-md {
+  max-width: 400px;
+}
+
+/* Containers */
+.bg-white {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-lg {
+  border-radius: 12px;
+}
+
+.shadow-lg {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography */
+.text-center {
+  text-align: center;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-gray-600 {
+  color: #718096;
+}
+
+.text-gray-700 {
+  color: #4a5568;
+}
+
+.text-blue-600 {
+  color: #007aff;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+/* Container for the form input */
+.form-input-container {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+/* Style for the form input */
+.form-input {
+  border: 1px solid #d2d6dc;
+  padding: 0.75rem 1rem;
+  padding-left: 2.5rem; /* Space for icon */
+  border-radius: 8px;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add focus effect to the input */
+.form-input:focus {
+  border-color: #3182ce;
+  box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.4);
+}
+
+/* Container for the icon */
+.icon-container {
+  position: absolute;
+  padding-top: 2.3rem;
+  top: 50%;
+  background: none;
+  left: 0.75rem; /* Adjust this to move the icon closer or further from the left */
+  transform: translateY(-50%);
+  color: #718096;
+  pointer-events: none;
+}
+
+/* Icon style */
+.icon {
+  width: 0.75em;
+  height: 0.75em;
+  color: #3182ce;
+}
+
+
+.error-message {
+  color: #e53e3e;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.error {
+  border-color: #e53e3e;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  accent-color: #007aff;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+/* Button */
+.button {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #4a90e2, #007aff);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 122, 255, 0.3);
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #007aff, #4a90e2);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 8px rgba(0, 122, 255, 0.4);
+}
+
+.loading .button {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Spinner */
+.button .animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Links */
+.link {
+  color: #007aff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Flexbox Utilities */
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/* Margins & Spacing */
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.space-y-6 > * + * {
+  margin-top: 1.5rem;
+}

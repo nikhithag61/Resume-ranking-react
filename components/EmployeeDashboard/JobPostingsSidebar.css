@@ -1,0 +1,95 @@
+/* JobPostingsSidebar.css */
+
+.sidebar-container {
+    width: 256px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .sidebar-header {
+    padding: 16px;
+    background-color: #2563eb;
+    color: #ffffff;
+  }
+  
+  .sidebar-title {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .sidebar-content {
+    padding: 16px;
+  }
+  
+  .sidebar-button {
+    width: 100%;
+    padding: 12px;
+    text-align: left;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    background-color: #f3f4f6; /* Light background for contrast */
+    color: #1f2937; /* Darker color for better readability */
+    font-size: 16px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+  }
+  
+  
+  .sidebar-button:hover {
+    background-color: #f3f4f6;
+    color: #1f2937;
+  }
+  
+  .sidebar-button.selected {
+    background-color: #dbeafe;
+    color: #2563eb;
+  }
+  
+  .button-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .icon-small {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .chevron-icon {
+    width: 16px;
+    height: 16px;
+    color: #9ca3af;
+  }
+  
+  /* Dashboard Layout */
+.dashboard-container {
+  display: flex;
+  gap: 20px; /* Space between sidebar and main content */
+  padding: 20px;
+}
+
+/* Sidebar */
+.sidebar-container {
+  width: 250px; /* Adjust sidebar width as needed */
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  position: sticky; /* Keeps sidebar fixed if desired */
+  top: 20px;
+}

@@ -1,0 +1,59 @@
+/* Styles for JobDetails component */
+.job-details-container {
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .department-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #1f2937;
+  }
+  
+  .roles-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  
+  .role-card {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    background-color: #f9fafb;
+    color: #374151;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .role-card.selected {
+    background-color: #1f2937; /* Dark background for selected card */
+    color: #ffffff; /* White text for contrast */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .role-card:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .role-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: inherit;
+  }
+  
+  .role-info {
+    margin-top: 8px;
+    color: inherit;
+  }
+  
+  .no-department-message {
+    text-align: center;
+    color: #6b7280;
+    margin-top: 40px;
+    font-size: 16px;
+  }
+  

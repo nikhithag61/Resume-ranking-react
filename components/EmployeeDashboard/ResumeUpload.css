@@ -1,0 +1,36 @@
+/* ResumeUpload.css */
+
+.resume-upload-container {
+    margin-top: 16px;
+  }
+  
+  .upload-label {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 16px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .upload-label:hover {
+    background-color: #1e40af;
+  }
+  
+  .upload-label:focus-within {
+    outline: 2px solid #93c5fd;
+  }
+  
+  .upload-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+  
+  .file-input {
+    display: none;
+  }
+  

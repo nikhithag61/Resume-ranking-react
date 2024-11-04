@@ -1,0 +1,73 @@
+/* Role selection card styles */
+.role-card {
+  color: #ffffff; /* Light text color for visibility */
+  background-color: #2d3748; /* Darker background for cards */
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 1rem; /* Adds space between cards */
+}
+
+/* Hover effect for role cards */
+.role-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Text inside role cards */
+.role-card h2 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #ffffff; /* Ensuring high contrast on dark background */
+}
+
+.role-card p {
+  font-size: 0.875rem;
+  color: #cbd5e0; /* Lighter gray for description text */
+}
+
+/* Icon container pulse animation on selection */
+.role-card.selected .icon-container {
+  animation: pulse 2s infinite;
+}
+
+/* Pulse animation for selected role card */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+  }
+}
+
+/* Continue button styles */
+.continue-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #4a90e2;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(74, 144, 226, 0.4);
+}
+
+/* Hover effect for Continue button */
+.continue-btn:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(74, 144, 226, 0.6);
+}
+
+.continue-btn:not(:disabled):active {
+  transform: translateY(0);
+}
